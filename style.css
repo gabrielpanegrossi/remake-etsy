@@ -254,12 +254,12 @@ main {
 .products {
 	display: flex;
 	width: 100%;
-	height: 46vh;
+	max-height: 460px;
 	justify-content: space-between;
 	padding-top: 1rem;
 }
 
-.products article {
+.products div {
 	display: flex;
 	align-items: flex-start;
 }
@@ -333,15 +333,17 @@ main {
 	overflow: visible;
 }
 
-.gift-categories button {
+.gift-categories .categories-button {
 	display: flex;
 	width: 100%;
-	height: 23vh;
+	max-height: 240px;
 	cursor: pointer;
 	border: 0.1rem solid rgba(0, 0, 0, 0.1);
 	border-radius: 5%;
 	overflow: hidden;
 	background-color: transparent;
+	padding-bottom: 4rem;
+	flex-wrap: wrap;
 }
 
 .gift-categories figure {
@@ -357,6 +359,9 @@ main {
 .gift-categories figcaption {
 	padding-left: 1rem;
 	padding-top: 1rem;
+	max-height: 30px;
+	font-weight: 600;
+	font-size: 1.1rem;
 }
 
 .about-etsy {
